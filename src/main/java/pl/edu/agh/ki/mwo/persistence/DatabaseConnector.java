@@ -103,12 +103,6 @@ public class DatabaseConnector {
 		transaction.commit();
 	}
 
-	public void updateSchoolClass(SchoolClass schoolClass) {
-		Transaction transaction = session.beginTransaction();
-		session.merge(schoolClass);
-		transaction.commit();
-	}
-
 	public void deleteSchoolClass(String schoolClassId) {
 		String hql = "FROM SchoolClass S WHERE S.id=" + schoolClassId;
 		Query query = session.createQuery(hql);
@@ -128,8 +122,16 @@ public class DatabaseConnector {
 		return students;
 	}
 
+	public Iterable<Student> getStudent(String studentId) {
+		String hql = "FROM Student S WHERE S.id=" + studentId;
+		Query query = session.createQuery(hql);
+		List students = query.list();
+
+		return students;
+	}
+
 	public void addStudent(Student student, String schoolClassId) {
-		String hql = "FROM SchoolClass S WHERE S.id=" + schoolClassId;
+		String hql = "FROM Student S WHERE S.id=" + schoolClassId;
 		Query query = session.createQuery(hql);
 		List<SchoolClass> results = query.list();
 		Transaction transaction = session.beginTransaction();
@@ -143,6 +145,17 @@ public class DatabaseConnector {
 		transaction.commit();
 	}
 
+	public void updateSchoolClass(SchoolClass schoolClass) {
+		Transaction transaction = session.beginTransaction();
+		session.merge(schoolClass);
+		transaction.commit();
+	}
+
+	public void updateStudent(Student student) {
+		Transaction transaction = session.beginTransaction();
+		session.merge(student);
+		transaction.commit();
+	}
 
 	public void deleteStudent(String studentId) {
 		String hql = "FROM Student S WHERE S.id=" + studentId;

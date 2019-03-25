@@ -68,5 +68,38 @@ public class StudentsControler {
 		return "studentsList";
 	}
 
+	@RequestMapping(value="/EditStudent", method=RequestMethod.POST)
+	public String displayStudentForm(@RequestParam(value="studentId", required=false) String studentId,
+										Model model, HttpSession session) {
+		if (session.getAttribute("userLogin") == null)
+			return "redirect:/Login";
+
+		model.addAttribute("students", DatabaseConnector.getInstance().getStudent(studentId));
+		return "studentEditForm";
+	}
+
+	@RequestMapping(value="/ApplyStudentEdit", method=RequestMethod.POST)
+	public String editStudent(@RequestParam(value="name", required=false) String name,
+							  @RequestParam(value="surname", required=false) String surname,
+							  @RequestParam(value="studentId", required=false) String studentId,
+							  @RequestParam(value="pesel", required=false) String pesel,
+							  Model model, HttpSession session) {
+		if (session.getAttribute("userLogin") == null)
+			return "redirect:/Login";
+
+		Student student = new Student();
+		student.setName(name);
+		student.setSurname(surname);
+		student.setId(Integer.valueOf(studentId));
+		student.setPesel(pesel);
+
+
+		DatabaseConnector.getInstance().updateStudent(student);
+
+		model.addAttribute("students", DatabaseConnector.getInstance().getStudents());
+		model.addAttribute("message", "Student został edytowany");
+
+		return "studentsList";
+	}
 
 }

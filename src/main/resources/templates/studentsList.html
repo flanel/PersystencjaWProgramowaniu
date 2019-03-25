@@ -11,18 +11,26 @@
     	<div th:include="menuFragment" ></div>
 		<br/><Br/>
 		<table border="1" cellpadding="5">
-			<tr><th>Id</th><th>Imię</th><th>Nazwisko</th><th>PESEL</th></tr>
+			<tr><th>Id</th><th>Imię</th><th>Nazwisko</th><th>PESEL</th><th>Usuń</th><th>Edytuj</th></tr>
 			<tr th:each="student: ${students}">
 				<td><span th:text="${student.id}" /></td>
 				<td><span th:text="${student.name}" /></td>
 				<td><span th:text="${student.surname}" /></td>
 				<td><span th:text="${student.pesel}" /></td>
+				<td><span th:text="${student.pesel}" /></td>
+
 		        <td>
 		            <form action="DeleteStudent" method="POST">
 		            	<input type="hidden" name="studentId" th:value="${student.id}" />
 		                <button type="submit">X</button>
 		            </form>
 		        </td>
+				<td>
+					<form action="EditStudent" method="POST">
+						<input type="hidden" name="studentId" th:value="${student.id}" />
+						<button type="submit">X</button>
+					</form>
+				</td>
 			</tr>
 		
 		

@@ -6,14 +6,16 @@
     <div layout:fragment="content">
     <div th:include="menuFragment" ></div>
     	<br/><br/>
-	   			<form action="ApplyEdit" method="POST">
+	   			<form action="ApplyStudentEdit" method="POST">
 					<table>
-						<tr th:each="school: ${schools}">
-							<td>Id:</td><td><input type="text" name="schoolId" th:attr = "value = ${school.id}" readonly="readonly" /></td></tr>
-						<tr th:each="school: ${schools}">
-							<td>nazwa:</td><td><input type="text" name="schoolName" th:attr="value = ${school.name}"/></td></tr>
-						<tr th:each="school: ${schools}">
-							<td>adres:</td><td><input type="text" name="schoolAddress" th:attr = "value = ${school.address}"/></td></tr>
+						<tr th:each="student: ${students}">
+							<td>Id:</td><td><input type="text" name="studentId" th:attr = "value = ${student.id}" readonly="readonly" /></td></tr>
+						<tr th:each="student: ${students}">
+							<td>Imię:</td><td><input type="text" name="studentName" th:attr="value = ${student.name}"/></td></tr>
+						<tr th:each="student: ${students}">
+							<td>Nazwisko:</td><td><input type="text" name="studentSurname" th:attr = "value = ${student.surname}"/></td></tr>
+						<tr th:each="student: ${students}">
+							<td>Pesel:</td><td><input type="text" name="studentPesel" th:attr = "value = ${student.pesel}"/></td></tr>
 					</table><br/><BR/>
 					<input type="submit" value="Zapisz"/>
 				</form>

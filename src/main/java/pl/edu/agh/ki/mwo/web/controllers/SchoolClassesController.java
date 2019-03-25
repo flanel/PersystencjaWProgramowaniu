@@ -68,6 +68,7 @@ public class SchoolClassesController {
 			return "redirect:/Login";
 
 		SchoolClass schoolClass = new SchoolClass();
+
 		schoolClass.setProfile(profile);
 		schoolClass.setCurrentYear(Integer.valueOf(currentYear));
 		schoolClass.setStartYear(Integer.valueOf(startYear));
