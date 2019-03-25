@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout">
+<body>
+
+    <div layout:fragment="content">
+    <div th:include="menuFragment" ></div>
+    	<br/><br/>
+	   			<form action="ApplyClassEdit" method="POST">
+					<table>
+						<tr th:each="schoolClass: ${schoolClasses}">
+							<td>Id:</td><td><input type="text" name="schoolClassId" th:attr = "value = ${schoolClass.id}" readonly="readonly" /></td></tr>
+						<tr th:each="schoolClass: ${schoolClasses}">
+							<td>profil:</td><td><input type="text" name="profile" th:attr="value = ${schoolClass.profile}"/></td></tr>
+						<tr th:each="schoolClass: ${schoolClasses}">
+							<td>rok rozpoczęcia:</td><td><input type="text" name="startYear" th:attr = "value = ${schoolClass.startYear}"/></td></tr>
+						<tr th:each="schoolClass: ${schoolClasses}">
+							<td>aktualny rok:</td><td><input type="text" name="currentYear" th:attr = "value = ${schoolClass.currentYear}"/></td></tr>
+					</table><br/><BR/>
+					<input type="submit" value="Zapisz"/>
+				</form>
+    </div>
+
+</body>
+</html>
+
+
