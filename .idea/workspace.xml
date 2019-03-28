@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd66ad92-86cb-43de-aab2-52fd3f43126f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school.db" beforeDir="false" afterPath="$PROJECT_DIR$/school.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ki/mwo/persistence/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ki/mwo/persistence/DatabaseConnector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ki/mwo/web/controllers/SchoolClassesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ki/mwo/web/controllers/SchoolClassesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ki/mwo/web/controllers/StudentsControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/edu/agh/ki/mwo/web/controllers/StudentsControler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/studentEditForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/studentEditForm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/studentsList.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/studentsList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ki/mwo/persistence/DatabaseConnector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ki/mwo/persistence/DatabaseConnector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ki/mwo/web/controllers/SchoolClassesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ki/mwo/web/controllers/SchoolClassesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ki/mwo/web/controllers/SchoolsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ki/mwo/web/controllers/SchoolsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/edu/agh/ki/mwo/web/controllers/StudentsControler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/edu/agh/ki/mwo/web/controllers/StudentsControler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/studentsList.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/studentsList.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,16 +27,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/schoolsList.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+            <state relative-caret-position="228">
+              <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentsList.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
@@ -252,7 +250,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553550983862" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553805995232" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -305,6 +303,14 @@
       <option name="presentableId" value="Default" />
       <updated>1553104815198</updated>
     </task>
+    <task id="LOCAL-00001" summary="Dodanie formatki możliwości edycji klas, do poprawy edycja studentów&#10;(usuwa studenta zamiast zapisac zmiany)">
+      <created>1553551070668</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1553551070668</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -338,6 +344,10 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Dodanie formatki możliwości edycji klas, do poprawy edycja studentów&#10;(usuwa studenta zamiast zapisac zmiany)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodanie formatki możliwości edycji klas, do poprawy edycja studentów&#10;(usuwa studenta zamiast zapisac zmiany)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/edu/agh/ki/mwo/web/controllers/LoginController.java">
@@ -479,17 +489,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/schoolsList.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/studentsList.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/schoolsList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="18" column="20" lean-forward="true" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>
